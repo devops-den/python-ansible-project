@@ -1,0 +1,10 @@
+- name: test my new module
+  hosts: virtualmachines
+  tasks:
+  - name: run the new module
+    sample:
+      command: 'cd /tmp; ls'
+    register: testout
+  - name: dump test output
+    debug:
+      msg: '{{ testout }}'
