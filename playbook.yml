@@ -1,5 +1,5 @@
 - name: test my new module
-  hosts: virtualmachines
+  hosts: all
   tasks:
   - name: run the new module
     sample:
